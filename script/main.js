@@ -32,3 +32,8 @@ let teamArray = [
         'image': 'barbara-ramos-graphic-designer.jpg'   
     }
 ]
+
+// stampa in console delle properties di ogni membro del team
+for(let index in teamArray){
+    console.log(teamArray[index])
+}

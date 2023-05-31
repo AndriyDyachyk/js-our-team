@@ -3,3 +3,6 @@ Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membr
 
 MILESTONE 0 : Creare l’array di oggetti con le informazioni fornite (file informazioni team).
     SOLUZIONE: Creare l'array 'teamArray' = [] contenente le properties per ogni membro, quindi 'nome', 'ruolo' e 'foto'
+
+MILESTONE 1 : Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+    SOLUZIONE: Creare un ciclo for in che permette di stampare in console l'index dell'array creato
