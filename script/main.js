@@ -2,14 +2,14 @@ console.log('principi.js loaded');
 
 let teamArray = [
     { 
-        'name': 'Wayne Barney',
+        'name': 'Wayne Barnett',
         'role': 'Founder & CEO',
-        'image': 'wayne-barnet-founder-ceo.jpg'   
+        'image': 'wayne-barnett-founder-ceo.jpg'   
     },
     { 
-        'name': 'Angela Carol',
+        'name': 'Angela Caroll',
         'role': 'Chief Editor',
-        'image': 'angela-carol-chief-editor.jpg'   
+        'image': 'angela-caroll-chief-editor.jpg'   
     },
     { 
         'name': 'Walter Gordon',
@@ -34,6 +34,18 @@ let teamArray = [
 ]
 
 // stampa in console delle properties di ogni membro del team
-for(let index in teamArray){
-    console.log(teamArray[index])
+const cards_container = document.getElementById('card_container')
+for(let i=0; i<teamArray.length; i++){
+    let membro = teamArray[i]
+    //compresa stilizzazione
+    let card = `<div class="card border-0 " style="width: 18rem;">
+                    <img src="${'./img/'}${membro.image}" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">${membro.name}</h3>
+                        <p class="card-text">${membro.role}</p>
+                    </div>
+                </div>`
+
+    //aggiunta delle card nel dom
+    cards_container.innerHTML += card
 }
